@@ -6,7 +6,7 @@ body, html{
 }
 
 .bannerbg {
-    background-image: url(imgs/bgvid3.mp4);
+    background-image: url(imgs/bgvid3_Trim.mp4);
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -183,7 +183,7 @@ width: 15%;
         margin-right: 0px;
     }
     .bannerbg {
-        background-image: url(imgs/bgvid3.mp4);
+        background-image: url(imgs/bgvid3_Trim.mp4);
         -webkit-background-size: cover;
         background-size: cover;
         background-repeat: no-repeat;
