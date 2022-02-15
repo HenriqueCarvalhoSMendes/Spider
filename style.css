@@ -17,7 +17,7 @@ body, html{
     background-image: url(imgs/preload.png);
     background-size: contain;
     background-position: center;
-    animation: load 15s infinite linear;
+    animation: load 8s infinite linear;
 }
 
 .box {
