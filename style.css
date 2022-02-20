@@ -5,6 +5,7 @@ body, html{
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
     overflow-wrap: break-word;
+    justify-content: center;
 }
 .content{
     display: none;
@@ -21,6 +22,12 @@ body, html{
     background-position: center;
     animation: load 7s infinite linear;
     
+}
+
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
@@ -221,9 +228,7 @@ section {
     .corpo{
         flex-direction: column-reverse;
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        margin: auto;
+        
     }
 
     .part1 {
@@ -281,10 +286,11 @@ section {
     .logos{
         display: flex;
         flex-direction: row;
-        width: 50%;
-        justify-content: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        justify-content: space-evenly;
+    }
+
+    .logos img {
+        width: 10vw;
     }
 }
 
