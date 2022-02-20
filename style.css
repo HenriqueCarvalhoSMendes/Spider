@@ -1,8 +1,10 @@
 body, html{
+    display: flex;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: transparent;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
 }
 .content{
     display: none;
@@ -18,6 +20,7 @@ body, html{
     background-size: contain;
     background-position: center;
     animation: load 7s infinite linear;
+    
 }
 
 .box {
@@ -32,41 +35,38 @@ body, html{
     align-items: center;
     background-color: black;
 }
-
-
-
-
-
 .bannerbg {
-    background-image: url(imgs/bgvid3_Trim.mp4);
+    background-image: url(imgs/bg.webp);
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
     position: fixed;
+    display: flex;
     z-index: -10;
     left: 0;
     right: 0;
     top: 0;
-    filter: blur(3px);
+    opacity: 85%;
 }
-
+.bannerbg img{
+    justify-content: center;
+    align-content: center;
+}
 .menu {
-    width: 50%;
-    height: 100%;
     display: flex;
-    margin-top: 1%;
-    margin-left: 5%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-
 ul, li, a {
     display: flex;
     flex-direction: row;
     margin-right: 10px;
     margin-top: 10px;
     text-decoration: none;
-    color: rgb(105, 105, 105);
+    color: rgb(255, 255, 255);
     font-family: sans-serif;
     font-weight: 10;
     font-size: 13px;
@@ -77,7 +77,7 @@ a:hover{
     color: white;
     border-top: 1px solid #bd1a20;
     padding-top: 2px;
-    transform: skewX(-10deg);
+    transform: skewX(-1deg);
 }
 
 .active{
@@ -91,44 +91,50 @@ a:hover{
     color: white;
     display: flex;
     justify-content: left;
-    align-items: left;
-    margin-left: 0px;
 }
 section {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .corpo {
     display: flex;
-    width: 100%;
-    flex-basis: 100%;
-}
-.part1{
-    width: 120%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
-    margin-top: 0%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
+
+.part1{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .part2 {
-    width: 250%;
-    margin-left: -4%;
-    margin-top: -11%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .text {
-    width: 125%;
-    text-align: left;
+    display: flex;
+    text-align: center;
     line-height: 22px;
-    font-size: 16px;
+    font-size: auto;
     color: rgb(158, 154, 154);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .miles1 {
-    width: 100%;
+    width: 59vw;
     transition: transform 2s;
     filter: drop-shadow(16px 16px 10px black);
 }
@@ -137,14 +143,17 @@ section {
     
 }
 .logo1 {
-    width: 110%;
+    width: 40vw;
     display: flex;
+    align-items: center;
     z-index: 5;
 }
 .btns {
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 .btns button {
     cursor: pointer;
@@ -170,39 +179,43 @@ section {
 .logos {
     display: flex;
     flex-direction: row;
-    width: 350px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
     .logs {
-    cursor: pointer;
     width: 10%;
-    margin-left: 20px;
-    margin-top: 20px;
     height: auto;
 }
 .mv {
 width: 15%;
 }
 
-@media (max-width: 600px) {
-    .menu {
+@media (max-width: 720px) {
+    body, html {
         width: 100%;
-        height: auto;
-        display: flex;
-        margin-top: 1%;
-        margin-left: 0%;
+        height: 100vh;
+        overflow-x: hidden;
+        position: fixed;
     }
-    ul, li, a {
+
+    .menu {
         display: flex;
         flex-direction: row;
-        margin-right: 5px;
-        margin-top: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+    ul, li, a {
         text-decoration: none;
         color: rgb(105, 105, 105);
         font-family: sans-serif;
         font-weight: 10;
-        font-size: 13px;
+        font-size: 1rem;
         text-transform: uppercase;
         transition: ease-in-out 0.5s;
+        
     }
     .logo {
         width: 30px;
@@ -211,71 +224,156 @@ width: 15%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 0px;
-        margin-right: 0px;
     }
     .bannerbg {
-        background-image: url(imgs/bgvid3_Trim.mp4);
+        width: 100vw;
+        height: 100vh;
+        background-image: url(imgs/bg.webp);
         -webkit-background-size: cover;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        height: 100%;
         position: fixed;
-        z-index: -10;
+        z-index: -1;
         left: 0;
         right: 0;
         top: 0;
-        filter: blur(3px);
-        border: none;
     }
     .corpo{
-        flex-direction: column;
+        flex-direction: column-reverse;
         display: flex;
-        top: 50%;
+        align-items: center;
+        justify-content: center;
     }
 
     .part1 {
         width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .part2{
+        display: flex;
         width: 100vw;
+        justify-content: center;
+        
     }
     .text{
         width: 100vw;
     }
     .miles1{
-        width: 100vw;
-        position: absolute;
-        top: 35px;
-        left: 12vw;
+        width: 60vw;      
     }
 
     .logo1{
-        position: absolute;
-        top: 40vh;
-        left: 3vh;
+         width: 75vw;
     }
 
     .text{
-        position: absolute;
-        top: 65vh;
-        text-align: center;
-        width: 110%;
+        display: flex;
+        flex-direction: row;
+        width: 70vw;
+        justify-content: center;
     }
+
+    .text p {
+        text-align: center;
+   }
     .btns{
-        position: relative;
-        top: 80vh;
-        flex-direction: column;
-        left: 9vw;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .btns button {
+        cursor: pointer;
+        text-transform: uppercase;
+        padding: 5px 15px 5px 15px;
+        color: white;
+        background-color: transparent;
+        border-left: 3px solid #ef292e;
+        border-right: 3px solid #ef292e;
+        border-top: 3px transparent;
+        border-bottom: 3px transparent;
+        font-family: sans-serif;
+        transition: ease-in-out 0.5s;
+        transform: skewX(-20deg);
     }
     .logos{
         display: flex;
         flex-direction: row;
-        width: 250px;
-        position: absolute;
-        top: 107%;
-        left: 25vh;
+        width: 50%;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
+}
+
+
+
+.lines {
+    position: fixed;
+    top: 50%;
+    opacity: 30%;
+    background-color: white;
+    display: flex;
+    transform: rotate3d(1, 1, 1, 180deg) matrix3d(1,0,0,0,0,1,6,0,0,0,1,0,50,100,0,1.1);
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10px;
+    border: 1px solid white;
+    animation: move 25s infinite linear;
+}
+
+.line1 {
+    position: fixed;
+    top: 50%;
+    opacity: 30%;
+    background-color: white;
+    display: flex;
+    transform: rotate3d(1, 1, 1, 80deg) matrix3d(1,0,0,0,0,1,6,0,0,0,1,0,50,100,0,1.1);
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10px;
+    border: 1px solid white;
+    animation: move 10s infinite linear;
+}
+
+.line2 {
+    position: fixed;
+    top: 50%;
+    opacity: 30%;
+    background-color: white;
+    display: flex;
+    transform: rotate3d(1, 1, 1, 360deg) matrix3d(1,0,0,0,0,1,6,0,0,0,1,0,50,100,0,1.1);
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10px;
+    border: 1px solid white;
+    animation: move 15s infinite linear;
+}
+
+.line3 {
+    position: fixed;
+    top: 50%;
+    opacity: 30%;
+    background-color: white;
+    display: flex;
+    transform: rotate3d(1, 1, 1, 180deg) matrix3d(1,0,0,0,0,1,6,0,0,0,1,0,50,100,0,1.1);
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10px;
+    border: 1px solid white;
+    animation: move 20s infinite linear;
+}
+
+
+@keyframes move {
+    to {transform: rotateX(360deg);}
 }
