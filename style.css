@@ -189,16 +189,12 @@ section {
     width: 10%;
     height: auto;
 }
-.mv {
-width: 15%;
-}
+
 
 @media (max-width: 720px) {
     body, html {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
-        overflow-x: hidden;
-        position: fixed;
     }
 
     .menu {
@@ -209,13 +205,15 @@ width: 15%;
     }
     ul, li, a {
         text-decoration: none;
-        color: rgb(105, 105, 105);
+        color: black;
         font-family: sans-serif;
         font-weight: 10;
         font-size: 1rem;
         text-transform: uppercase;
         transition: ease-in-out 0.5s;
-        
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
     .logo {
         width: 30px;
@@ -225,20 +223,7 @@ width: 15%;
         justify-content: center;
         align-items: center;
     }
-    .bannerbg {
-        width: 100vw;
-        height: 100vh;
-        background-image: url(imgs/bg.webp);
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        position: fixed;
-        z-index: -1;
-        left: 0;
-        right: 0;
-        top: 0;
-    }
+  
     .corpo{
         flex-direction: column-reverse;
         display: flex;
