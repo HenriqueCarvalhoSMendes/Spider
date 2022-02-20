@@ -201,19 +201,15 @@ section {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
     ul, li, a {
         text-decoration: none;
         color: black;
         font-family: sans-serif;
         font-weight: 10;
-        font-size: 1rem;
+        font-size: auto;
         text-transform: uppercase;
-        transition: ease-in-out 0.5s;
-        justify-content: center;
-        align-items: center;
-        display: flex;
     }
     .logo {
         width: 30px;
@@ -228,11 +224,12 @@ section {
         flex-direction: column-reverse;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        margin: auto;
     }
 
     .part1 {
-        width: 100vw;
+        width: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -241,13 +238,11 @@ section {
 
     .part2{
         display: flex;
-        width: 100vw;
+        width: auto;
         justify-content: center;
         
     }
-    .text{
-        width: 100vw;
-    }
+   
     .miles1{
         width: 60vw;      
     }
@@ -259,7 +254,7 @@ section {
     .text{
         display: flex;
         flex-direction: row;
-        width: 70vw;
+        width: auto;
         justify-content: center;
     }
 
