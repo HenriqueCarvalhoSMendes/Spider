@@ -484,3 +484,27 @@ section {
 .container1 .card .contents a:hover {
 background-color: red;
 }
+
+.container1 .wp1 {
+    background-image: url(imgs/wp/wp1.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.container1 .wp2 {
+    background-image: url(imgs/wp/wp2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container1 .wp3 {
+    background-image: url(imgs/wp/wp3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container1 .wp4 {
+    background-image: url(imgs/wp/wp4.jpg);
+    background-position: center;
+    background-size: cover;
+}
