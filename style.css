@@ -141,14 +141,10 @@ section {
 }
 
 .miles1 {
-    width: 59vw;
-    transition: transform 2s;
+    width: 55vw;
     filter: drop-shadow(16px 16px 10px black);
 }
- .miles1:hover{
-    transform: rotateY(-180deg);
-    
-}
+
 .logo1 {
     width: 40vw;
     display: flex;
@@ -304,9 +300,6 @@ section {
     }
 
 }
-
-
-
 .lines {
     position: fixed;
     top: 50%;
@@ -373,99 +366,121 @@ section {
     to {transform: rotateX(360deg);}
 }
 
-.story {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    overflow: hidden;
-    width:90vw;
-    background-color: rgba(0, 0, 0, 0.747);
-    padding: 20px;
-}
 
-.textS {
-    display: flex;
-    flex-direction: column;
-    line-height: normal;
-    width: 90vw;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.textS > h1 {
-    width: 75vw;
-}
-
-
-
-.textS > h1, p {
-    color: white;
-}
-
-.textS > p {
-    width: 100%;
-}
-
-
-.textS > h2 {
-    color: rgb(87, 87, 87);
-    width: 100%;
-    margin: 20px;
-}
-
-.bgvideo {
-    width: 20vw;
-    height: 20vw;
+.container1 {
+    position: relative;
     display: flex;
     justify-content: center;
-    opacity: 90%;
-}
-
-.container {
-    margin: 0px 20px 0px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 90vw;
-    height: fit-content;
-    background-color: rgba(128, 128, 128, 0.473);
-    padding: 20px;
-}
-
-.container > h1 {
-    color: white;
-}
-
-.container > p {
-    color: black;
-}
-
-.walls {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 1200px;
     flex-wrap: wrap;
-}
-.wpImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-direction: row;
+    z-index: 1;
 }
 
-.wp {
+.container1 .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 50vw;
-    height:auto;
-    margin: 0;
-    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container1 .miles {
+    background-image: url(imgs/miles2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container1 .rio {
+    background-image: url(imgs/Rio_Morales_from_MM_render.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container1 .phin {
+    background-image: url(imgs/Phin\ Manson.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container1 .peter {
+    background-image: url(imgs/peter.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container1 .martin {
+    background-image: url(imgs/martin.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.container1 .card .contents {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s;
+   
+}
+
+.container1 .card:hover .contents{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container1 .card .contents h2{
+    position: absolute;
+    top: -150px;
+    font-size: 5em;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.container1 .card .contents h3 {
+    font-size: 1.8em;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    background-color: black;
+}
+
+.container1 .card .contents p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+.container1 .card .contents a {
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: auto;
+    color: white;
+    background-color: transparent;
+    border-left: 3px solid #ef292e;
+    border-right: 3px solid #ef292e;
+    border-top: 3px transparent;
+    border-bottom: 3px transparent;
+    font-family: sans-serif;
+    border-style: groove;
+    transition: ease-in-out 0.5s;
+    transform: skewX(-20deg);
+    border-radius: 3px;         ;
+}
+
+
+.container1 .card .contents a:hover {
+background-color: red;
 }
