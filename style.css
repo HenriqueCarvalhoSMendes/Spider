@@ -81,6 +81,7 @@ ul, li, a {
     font-size: 13px;
     text-transform: uppercase;
     transition: ease-in-out 0.5s;
+    cursor: pointer;
 }
 .menu a:hover{
     color: white;
