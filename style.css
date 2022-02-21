@@ -82,7 +82,7 @@ ul, li, a {
     text-transform: uppercase;
     transition: ease-in-out 0.5s;
 }
-a:hover{
+.menu a:hover{
     color: white;
     border-top: 1px solid #bd1a20;
     padding-top: 2px;
