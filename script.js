@@ -1,7 +1,7 @@
 window.addEventListener("load", setTimeout(function loading(){
     document.getElementsByClassName('box')[0].style.display="none"
     document.getElementsByClassName('content')[0].style.display="block"
-}, 100))
+}, 7000))
 
 
 function openPage(x, y){
