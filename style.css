@@ -369,7 +369,7 @@ section {
     align-items: center;
     z-index: 1;
     overflow: hidden;
-    width:90vw;
+    width:75vw;
     background-color: rgba(0, 0, 0, 0.747);
     padding: 20px;
 }
@@ -377,7 +377,7 @@ section {
 .textS {
     line-height: normal;
     letter-spacing: 2px;
-    width: 90%;
+    width: 50vw;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -397,8 +397,8 @@ section {
 
 
 .bgvideo {
-    width: auto;
-    height: auto;
+    width: 20vw;
+    height: 20vw;
     display: flex;
     justify-content: center;
     margin-top: 20px;
