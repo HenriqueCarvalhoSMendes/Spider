@@ -293,7 +293,16 @@ section {
 
     .logos img {
         width: 10vw;
-    }       
+    }  
+    
+    .textS{
+        flex-direction: column;
+    }
+
+    .story {
+        flex-direction: column;
+    }
+
 }
 
 
@@ -311,6 +320,7 @@ section {
     height: 10px;
     border: 1px solid white;
     animation: move 25s infinite linear;
+    z-index: -1;
 }
 
 .line1 {
@@ -369,39 +379,93 @@ section {
     align-items: center;
     z-index: 1;
     overflow: hidden;
-    width:75vw;
+    width:90vw;
     background-color: rgba(0, 0, 0, 0.747);
     padding: 20px;
 }
 
 .textS {
+    display: flex;
+    flex-direction: column;
     line-height: normal;
-    letter-spacing: 2px;
     width: 90vw;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
+.textS > h1 {
+    width: 75vw;
+}
+
+
+
 .textS > h1, p {
     color: white;
+}
+
+.textS > p {
+    width: 100%;
 }
 
 
 .textS > h2 {
     color: rgb(87, 87, 87);
+    width: 100%;
+    margin: 20px;
 }
-
-
-
-
 
 .bgvideo {
     width: 20vw;
     height: 20vw;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     opacity: 90%;
 }
 
+.container {
+    margin: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: fit-content;
+    background-color: rgba(128, 128, 128, 0.473);
+    padding: 20px;
+}
+
+.container > h1 {
+    color: white;
+}
+
+.container > p {
+    color: black;
+}
+
+.walls {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wpImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.wp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height:auto;
+    margin: 0;
+    padding: 0;
+}
